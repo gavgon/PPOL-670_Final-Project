@@ -1,0 +1,16 @@
+---
+title: "PPOL 670 Final Project Group Proposal"
+subtitle: "Floods & Child Stunting"
+author: "Abhinav Dutt, Gavin Gondalwala, & Zheng Gu"
+format: pdf
+editor: source
+editor_options: 
+  chunk_output_type: console
+execute: 
+  warning: false
+urlcolor: blue
+---
+
+# Part 1: Topic
+## Research Question
+Does drought exposure predict child stunting in Sub-Saharan Africa?
