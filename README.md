@@ -10,12 +10,12 @@ Tracking progress for the Introduction to Data Science for Public Policy final p
 
 ## Repo Contents
 
-At this stage of the project, the most important files live in the subdirectory project_proposal. Key files are:
+At this stage of the project, the most important files live in the subdirectory **project_proposal**. Key files are:
+
+- **README.md**
 
 - **project-proposal.pdf**: The official project proposal.
 
 - **project-proposal.qmd**: The Quarto document which produces the proposal.
 
-- **README.md**
-
-- .gitignore: Instructing Git to not track changes to supporting files.
+- **.gitignore**: Instructing Git to not track changes to supporting files.
