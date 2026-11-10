@@ -11,16 +11,6 @@ execute:
 urlcolor: blue
 ---
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-+=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
-| *Task (To be deleted!)*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| *1. Team proposal: Students will form teams of 3-4 people. All teams need to submit a project proposal on Canvas. Only one proposal is needed per team. The proposal should be 2-3 paragraphs and include the names on the team, a brief description of the motivating question, all data sources that will be used, a description of the approach, and the two or three of the biggest anticipated technical hurdles in the project. Please cite any projects that you are emulating or building upon from other classes or other researchers. Late submissions will immediately receive a grade of zero.* |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| *2. A public GitHub repository: All project materials should be created using .R, .md, and .qmd. Microsoft Word and Google docs will not be accepted. All files should be added to a GitHub repository during the project. A detailed README and clear commit messages are required. Projects that are created and then hastily added to Git/GitHub will be penalized.*                                                                                                                                                                                                                                     |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
 # Introduction
 
 This project builds on Gavin Gondalwala's proposal of analyzing the relationship between drought exposure and childhood stunting. The corresponding Github repo can be found at <https://github.com/gavgon/PPOL-670_Final-Project>.
@@ -51,8 +41,6 @@ The project aims to conduct a geospatial analysis with an econometric regression
 
 $$y = \beta_0 + \beta_1 \text{stunted} + \beta_2 \text{drought} + \beta_3 (\text{stunt} \times \text{drought}) + \beta_4 (\text{land\_cultivation}) + \beta_5 (\text{mom\_height}) + \varepsilon$$
 
-*Note: The above LaTeX code was generated by Gavin Gondalwala using Gemini 3.6 Flash on 09 Nov. 2026. Using a handwritten photo of the equation, the prompt was: "Please write me LaTeX code to render the regression equation at the top of the whiteboard in my .qmd in RStudio."* 
-
 The current intention is to obtain GPS data from DHS and perform a point-polygon join to place households within drought grids from SPEIbase, which cross national borders, and within agricultural grids from MapSPAM. The underlying theory for including land under cultivation is that areas with little land under cultivation may not be impacted by drought since food is not sourced there; the theory underlying controlling for mother's height is that a taller child may still be stunted when coming from a tall genetic background.
 
 Upon further exploratory data analysis, additional control variables may be used. 
@@ -60,13 +48,14 @@ Upon further exploratory data analysis, additional control variables may be used
 ## Hurdles
 There are two primary hurdles in this project which the team will have to navigate:
 
-1. GPS data availability: If DHS does not approve access to GPS data for the household surveys, we will not be able to do an analysis which is agnostic to borders. In the absence of GPS data, the drought data will be nationally aggregated and analysis will be conducted at the national level, instead of at a continuous spatial level.
+1. **GPS data availability**: If DHS does not approve access to GPS data for the household surveys, we will not be able to do an analysis which is agnostic to borders. In the absence of GPS data, the drought data will be nationally aggregated and analysis will be conducted at the national level, instead of at a continuous spatial level.
 
-2. Creating a clear mapping between two different sets of polygons: SPEIbase and MapSPAM both have polygons, however at different resolutions. The team will need to find a coherent mapping between the two in order to get a clear analysis which includes drought conditions and land under cultivation. Should a clear mapping not prove possible, other nutrition and food consumption variables from the DHS surveys may be used in place of the MapSPAM data.
-
-
+2. **Creating a clear mapping between two different sets of polygons**: SPEIbase and MapSPAM both have polygons, however at different resolutions. The team will need to find a coherent mapping between the two in order to get a clear analysis which includes drought conditions and land under cultivation. Should a clear mapping not prove possible, other nutrition and food consumption variables from the DHS surveys may be used in place of the MapSPAM data.
 
 
+# Additional Information
 
+### AI Disclosure
+The LaTeX code for the regression was generated by Gavin Gondalwala using Gemini 3.6 Flash on 09 Nov. 2026. Using a handwritten photo of the equation, the prompt was: "Please write me LaTeX code to render the regression equation at the top of the whiteboard in my .qmd in RStudio."
 
 
