@@ -1,5 +1,5 @@
 ---
-title: "PPOL 670 Final Project Group Proposal"
+title: "PPOL 6803 Final Project Group Proposal"
 subtitle: "Floods & Child Stunting"
 author: "Abhinav Dutt, Gavin Gondalwala, & Zheng Gu"
 format: pdf
@@ -13,7 +13,7 @@ urlcolor: blue
 
 # Introduction
 
-This project builds on Gavin Gondalwala's proposal of analyzing the relationship between drought exposure and childhood stunting. The corresponding Github repo can be found at <https://github.com/gavgon/PPOL-670_Final-Project>.
+This project builds on Gavin Gondalwala's proposal of analyzing the relationship between drought exposure and childhood stunting. The corresponding Github repo can be found at <https://github.com/gavgon/PPOL-6803_Final-Project>.
 
 # Research Question & Motivation
 
@@ -37,11 +37,11 @@ The following data sources will be used in the analysis:
 * **MapSPAM (IFPRI)**: [SPAM](https://www.mapspam.info/methodology/) uses inputs such as satellite crop coverage, land statistics, production & irrigation systems, crop intensity, crop suitability, rural population density, and crop prices to produce a dataset detailing hectares, farmed area, production, and yield. It has global coverage due to the satellite observations and is available as .csv files. It is at a granular grid cell level which is disaggregated from the broader units of countries and sub-national provinces.
 
 ## Approach
-The project aims to conduct a geospatial analysis with an econometric regression. The proposed form of the regression, with the variable of interest $\beta_3$, is: 
+The project aims to conduct a geospatial analysis with an econometric regression. The basic proposed form of the regression, with the variable of interest $\beta_3$, is: 
 
 $$y = \beta_0 + \beta_1 \text{stunted} + \beta_2 \text{drought} + \beta_3 (\text{stunt} \times \text{drought}) + \beta_4 (\text{land\_cultivation}) + \beta_5 (\text{mom\_height}) + \varepsilon$$
 
-The current intention is to obtain GPS data from DHS and perform a point-polygon join to place households within drought grids from SPEIbase, which cross national borders, and within agricultural grids from MapSPAM. The underlying theory for including land under cultivation is that areas with little land under cultivation may not be impacted by drought since food is not sourced there; the theory underlying controlling for mother's height is that a taller child may still be stunted when coming from a tall genetic background.
+The current intention is to obtain GPS data from DHS and perform a point-polygon join to place households within drought grids from SPEIbase, which cross national borders, and within agricultural grids from MapSPAM. Drought data will be averaged to a yearly interval, and lags will be included in the regression to control for long term drought exposure, instead of simply including immediate drought exposure. One methodological hurdle will be deciding on the length of this lag based on the average age of children in the dataset once it is merged. The team will research other demographic analyses to decide on an appropriate time frame. The underlying theory for including land under cultivation is that areas with little land under cultivation may not be impacted by drought since food is not sourced there; the theory underlying controlling for mother's height is that a taller child may still be stunted when coming from a tall genetic background.
 
 Upon further exploratory data analysis, additional control variables may be used. 
 
