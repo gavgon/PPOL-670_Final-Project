@@ -2,7 +2,7 @@
 title: "PPOL 670 Final Project Group Proposal"
 subtitle: "Floods & Child Stunting"
 author: "Abhinav Dutt, Gavin Gondalwala, & Zheng Gu"
-format: html
+format: pdf
 editor: source
 editor_options: 
   chunk_output_type: console
