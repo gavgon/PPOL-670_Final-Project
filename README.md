@@ -2,7 +2,7 @@
 
 #### Abhinav Dutt, Gavin Gondalwala, & Zheng Gu
 
-#### Associated Github Repo: [gavgon/PPOL-670_Final-Project](https://github.com/gavgon/PPOL-670_Final-Project)
+#### Associated Github Repo: [gavgon/PPOL-6803_Final-Project](https://github.com/gavgon/PPOL-6803_Final-Project)
 
 ## Overview
 
